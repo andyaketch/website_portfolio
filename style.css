@@ -1,0 +1,29 @@
+#navbar{
+  background-color:coral;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between; /* Brand on left, links on right */
+  align-items: center;            /* Centers items vertically */
+  font-family: system-ui, sans-serif;
+
+}
+
+#project {
+  width: 320px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden; /* Ensures child image corners match rounded borders */
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.07);
+  font-family: system-ui, sans-serif;
+
+  /* The secret to smooth animation */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#testimonials-card{
+    background-color:coral;
+
+}

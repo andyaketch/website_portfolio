@@ -1,40 +1,43 @@
-<!DOCTYPE html> <!--element-->
-<html lang="en"> <!--attribute + attribute value-->
+<!DOCTYPE html> <!-- Document type declaration -->
+<html lang="en"> <!-- Root element with language attribute -->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--search engine optimization-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive viewport settings -->
     <title>AA Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
+<body>
 
-<section id="navbar">
-    <nav>
-    <ul>
-        <li>Home</li>
-        <li>Project</li>
-        <li>Contacts</li>
-    </ul>  
-    </nav>
- 
+    <header id="navbar">
+        <div class="logo">AA</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#navbar">Home</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>  
+        </nav>
+    </header>
 
-</section>
-<section id="testimonials">
-<div class="testimonials-card">
+    <section id="testimonials">
+        <div class="testimonials-card">
+            <p>What our clients say.</p>
+        </div>
+    </section>
 
-</div>
+    <section id="project">
+        <div class="card-item">
+            <a href="website_portfolio/Assets/robotics.jpg">Flagship bot</a>
+            <p>Build your own AI bot app today!</p>
+        </div>
+        <div class="card-item">
+            <p>Take a deep dive into our robotics projects!</p>
+        </div>
+    </section>
 
-</section>
-<section class="testimonials-card" id="project">
-    <div>
-     <p>Build your own AI bot app today!</p>
-    </div>
-    <div>
-     <p>Take a deep dive into our robotics projects!</p>
-    </div>
-    
-</section>
-<section id="contacts">
+    <footer id="contacts">
+        <p>Get in touch: hello@example.com</p>
+    </footer>
 
-</section>
-
+</body>
 </html>
