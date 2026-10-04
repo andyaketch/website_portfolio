@@ -47,7 +47,7 @@ function renderTestimonials() {
 
 renderTestimonials();
 
-const projects = [
+const projectsData = [
   {
     title: "Flagship Bot",
     description: "An industrial inspection and logistics ground unit equipped with onboard spatial intelligence, capable of zero-downtime navigation across rugged, GPS-denied environments.",
@@ -64,24 +64,22 @@ const projects = [
   } 
   ]
 
-const pcontainer = document.getElementById("projectsContainer");
-
-function renderTestimonials() {
-  const container = document.getElementById("testimonialsContainer");
+function renderProjects() {
+  const container = document.getElementById("projectsContainer");
 
   container.innerHTML = "";
 
-  // Loop through every testimonial object in the array
-  testimonialsData.forEach((item) => {
+  // Loop through every project object in the array
+  projectsData.forEach((item) => {
     const article = document.createElement("article");
-    article.className = "testimonial-card";
+    article.className = "projects-card";
 
     // Stamp the template using the individual item's properties
     article.innerHTML = `
-      <div class="testimonial-image">
+      <div class="projects-image">
         <img src="${item.image}" alt="${item.alt}">
       </div>
-      <div class="testimonial-content">
+      <div class="projects-content">
         <h3>${item.title}</h3>
         <p>${item.description}</p>
       </div>
@@ -90,3 +88,4 @@ function renderTestimonials() {
     container.appendChild(article);
   });
 }
+renderProjects() 
