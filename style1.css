@@ -16,12 +16,16 @@ body {
 }
 
 #navbar {
+  position:sticky;
+  top: 0%;
+  z-index: 1000;
   background-color: coral;
   margin: 0 auto;
   padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .nav-links {
@@ -215,6 +219,7 @@ body {
   padding: 6rem 1.5rem ;
   text-align: center;
   border-bottom: 10px solid #fed7aa;
+  font-weight: 400;
 }
 
 .hero-container {
@@ -224,7 +229,7 @@ body {
   gap: 1.25rem;
 }
 
-.hero-badge {
+.hero-headline {
   display: inline-flex;
   font-size: 0.85rem;
   font-weight: 756;
@@ -234,4 +239,12 @@ body {
   background-color: #ffedd5;
   padding: 0.35rem 1rem;
   border: 1px solid #fdba74;
+}
+#testimonials,
+#project {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers cards vertically on the screen */
+  padding: 4rem 1.5rem;
 }
