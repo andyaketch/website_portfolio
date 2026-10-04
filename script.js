@@ -19,6 +19,9 @@ const testimonialsContainer = [
     alt: "Maya's Testimonial",   
   }
 ];
+
+const tContainer = document.getElementById("testimoinalsContainer");
+
 const projects = [
   {
     title: "Flagship Bot",
@@ -36,18 +39,12 @@ const projects = [
   } 
   ]
 
+const pcontainer = document.getElementById("projectsContainer");
+
 // build the project then insert them
 function renderProjects() {
   const container = document.getElementById("projects-grid");
 
-  for (let i = 0; i < projects.length; i++) {
-    const project = projects[i];
-
-    // Build the little tag badges (e.g. "PostGIS", "Remote Sensing")
-    let tagsHtml = "";
-    for (let j = 0; j < project.tags.length; j++) {
-      tagsHtml += `<span class="project-tag">${project.tags[j]}</span>`;
-    }
 
     // Create a new <article> element for this project
     const article = document.createElement("article");
