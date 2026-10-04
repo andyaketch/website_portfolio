@@ -4,7 +4,7 @@ An interactive, responsive landing page showcasing autonomous systems, robotics 
 
 ## Live Demo
 
-Explore the live site: [AA Robotics on GitHub Pages]([https://<your-username>.github.io/<your-repo-name>/](https://andyaketch.github.io/website_portfolio/))
+Explore the live site: [AA Robotics on GitHub Pages](https://andyaketch.github.io/website_portfolio/)
 
 ## Features
 - **Dynamic Content Injection**: Testimonials and project cards rendered dynamically from JavaScript data structures using template literals.
@@ -19,8 +19,18 @@ Explore the live site: [AA Robotics on GitHub Pages]([https://<your-username>.gi
 - **JavaScript (ES6+)**: DOM manipulation, template literals, and array iteration methods (`forEach`).
 - **GitHub Actions & Pages**: Automated continuous deployment pipeline.
 
-## How to Run Locally
+## How to Run It Locally
 
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/](https://github.com/)<your-username>/<your-repo-name>.git
+1. Clone the repo:
+   ```
+   git clone https://github.com/andyaketch/andyaketch-portfolio.git
+   ```
+2. Open the folder and double-click `index.html`, or open it directly in your browser.
+   No build tools, servers, or dependencies are required — it's plain HTML/CSS/JS.
+
+## What I Learned
+
+I learnt preparation is the most consuming part of any project work, both mentally and physically.
+Working through this project reinforced how to separate content (data) from presentation
+(HTML/CSS) by keeping skills and projects as JavaScript arrays and looping through them to
+build the page, rather than hardcoding repeated markup by hand.
