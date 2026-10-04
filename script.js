@@ -20,7 +20,6 @@ const testimonialsData = [
   }
 ];
 
-
 function renderTestimonials() {
   const container = document.getElementById("testimonialsContainer");
 
@@ -46,7 +45,6 @@ function renderTestimonials() {
   });
 }
 
-// Execute the function
 renderTestimonials();
 
 // const projects = [
