@@ -211,15 +211,13 @@ body {
 }
 /* HERO/'LANDING PAGE' SECTION */
 #hero {
-  background: #fff7ed 0%,;
-  padding: 6rem 1.5rem 4rem;
+  background: #fff7ed;
+  padding: 6rem 1.5rem ;
   text-align: center;
-  border-bottom: 1px solid #fed7aa;
+  border-bottom: 10px solid #fed7aa;
 }
 
 .hero-container {
-  max-width: 850px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -227,14 +225,13 @@ body {
 }
 
 .hero-badge {
-  display: inline-block;
+  display: inline-flex;
   font-size: 0.85rem;
-  font-weight: 700;
+  font-weight: 756;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #c2410c;
   background-color: #ffedd5;
   padding: 0.35rem 1rem;
-  border-radius: 9999px;
   border: 1px solid #fdba74;
 }
