@@ -1,39 +1,31 @@
-const testimonials = [
+const testimonialsContainer = [
   {
-    title: "",
-    description: "A PostGIS-based geospatial database and analysis project examining healthcare accessibility across Kenya's Arid and Semi-Arid Land (ASAL) counties. It brings together spatial data on health facilities and population distribution to identify gaps in access to care across these underserved regions, using PostGIS for spatial queries and analysis.",
+    title: "Julian",
+    description: "Integrating their custom autonomous picking bots completely transformed our warehouse throughput. The deployment was seamless, and the AI routing cut our order processing times by nearly 40% in the first quarter.",
     image:"website_portfolio/Assets/testimonial1.jpg",
-    alt: "ASAL Healthcare Accessibility Mapping",
-    tags: ["PostGIS", "Spatial SQL", "Accessibility Modeling"],
-    link:"https://medium.com/@andyaketch/left-behind-on-foot-mapping-healthcare-access-in-kenyas-forgotten-drylands-6115305d2d70" 
+    alt: "Julian's Testimonial",
+
   },
   {
-    title: "Kiambu County Land Use & Environment Study",
-    description: "A remote sensing and machine learning study of environmental change in Kiambu County, Kenya. It combines RSEI (Remote Sensing Ecological Index) and LULC (Land Use/Land Cover) classification with SHAP analysis to interpret which factors are driving the changes detected in satellite imagery. The findings were written up as a Medium blog series, translating the technical analysis into a narrative on how the county's land and environment are shifting over time.",
+    title: "Elena",
+    description: "Their lab built an adaptive computer-vision model for our diagnostic hardware that exceeded our accuracy benchmarks within weeks. The team’s deep expertise in robotics control and real-time inference made them feel like an extension of our internal team",
     image: "website_portfolio/Assets/testimonial2.jpg",
-    alt: "Kiambu County Land Use and Environment Study",
-    tags: ["Remote Sensing", "Machine Learning", "SHAP Interpretability", "RSEI & LULC"],
-    link: "https://medium.com/@andyaketch/fifteen-years-of-data-about-kiambus-ecological-health-9fd3fe32ccf1"
-    
+    alt: "Elena's Testimonial", 
   },
     {
-    title: "Kiambu County Land Use & Environment Study",
-    description: "A remote sensing and machine learning study of environmental change in Kiambu County, Kenya. It combines RSEI (Remote Sensing Ecological Index) and LULC (Land Use/Land Cover) classification with SHAP analysis to interpret which factors are driving the changes detected in satellite imagery. The findings were written up as a Medium blog series, translating the technical analysis into a narrative on how the county's land and environment are shifting over time.",
+    title: "Maya",
+    description: "From early prototyping to edge AI deployment in rugged field conditions, their robotic sensor integration delivered reliable performance where off-the-shelf options failed. They are our go-to partner for complex automation challenges.",
     image: "website_portfolio/Assets/testimonial3.jpg",
-    alt: "Kiambu County Land Use and Environment Study",
-    tags: ["Remote Sensing", "Machine Learning", "SHAP Interpretability", "RSEI & LULC"],
-    link: "https://medium.com/@andyaketch/fifteen-years-of-data-about-kiambus-ecological-health-9fd3fe32ccf1"
-    
+    alt: "Maya's Testimonial",   
   }
 ];
 const projects = [
   {
     title: "Flagship Bot",
-    description: "A next-generation prototyping facility engineered for real-time edge computing, autonomous hardware stress testing, and human-robot collaborative learning environments.",
-    image:"website_portfolio/Assets/testimonial1.jpg",
-    alt: "ASAL Healthcare Accessibility Mapping",
-    tags: ["PostGIS", "Spatial SQL", "Accessibility Modeling"],
-    link:"https://medium.com/@andyaketch/left-behind-on-foot-mapping-healthcare-access-in-kenyas-forgotten-drylands-6115305d2d70" 
+    description: "An industrial inspection and logistics ground unit equipped with onboard spatial intelligence, capable of zero-downtime navigation across rugged, GPS-denied environments.",
+    image:"website_portfolio/Assets/robotics.jpg",
+    alt: "Apex-7 Adaptive Autonomous Rover",
+    tags: ["CAN Bus Actuation", "OpenCV", "NVDIA Modeling"],
   },
   {
     title: "State of the art laboratory",
