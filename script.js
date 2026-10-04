@@ -1,4 +1,4 @@
-const testimonialsContainer = [
+const testimonialsData = [
   {
     title: "Julian",
     description: "Integrating their custom autonomous picking bots completely transformed our warehouse throughput. The deployment was seamless, and the AI routing cut our order processing times by nearly 40% in the first quarter.",
@@ -20,27 +20,33 @@ const testimonialsContainer = [
   }
 ];
 
+
 function renderTestimonials() {
-  const tContainer = document.getElementById("testimonialsContainer");
+  const container = document.getElementById("testimonialsContainer");
 
-    // Create a new <article> element for this project
+  container.innerHTML = "";
+
+  // Loop through every testimonial object in the array
+  testimonialsData.forEach((item) => {
     const article = document.createElement("article");
-    article.className = "testimonialsContainer"; // re-uses existing card styling from style.css doc
+    article.className = "testimonial-card";
 
-    // Fill it in with the appropriate(testimonials)'s info
+    // Stamp the template using the individual item's properties
     article.innerHTML = `
-      <div class="testimonialsContainer">
-        <img src="${testimonialsContainer.image}" alt="${testimonialsContainer.alt}">
+      <div class="testimonial-image">
+        <img src="${item.image}" alt="${item.alt}">
       </div>
-      <div class="testimonialsContainer">
-        <div class="testimonialsContainer">${tagsHtml}</div>
-        <h3>${testimonialsContainer.title}</h3>
-        <p>${testimonialsContainer.description}</p>
+      <div class="testimonial-content">
+        <h3>${item.title}</h3>
+        <p>${item.description}</p>
       </div>
     `;
 
-    tContainer.appendChild(article);
-  }
+    container.appendChild(article);
+  });
+}
+
+// Execute the function
 renderTestimonials();
 
 // const projects = [
