@@ -64,7 +64,7 @@ function renderProjects() {
 
     container.appendChild(article);
   }
-}
+
 
 
 renderProjects();
