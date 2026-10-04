@@ -125,10 +125,13 @@ body {
 /* Image wrapper */
 .testimonial-image img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
-  display: block;
+  height: 300px;
+  object-fit:cover;
 }
+/* .testimonial-image .hover{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+} */
 
 /* Content block */
 .testimonial-content {
