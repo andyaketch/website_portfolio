@@ -1,0 +1,81 @@
+const testimonials = [
+  {
+    title: "",
+    description: "A PostGIS-based geospatial database and analysis project examining healthcare accessibility across Kenya's Arid and Semi-Arid Land (ASAL) counties. It brings together spatial data on health facilities and population distribution to identify gaps in access to care across these underserved regions, using PostGIS for spatial queries and analysis.",
+    image:"website_portfolio/Assets/testimonial1.jpg",
+    alt: "ASAL Healthcare Accessibility Mapping",
+    tags: ["PostGIS", "Spatial SQL", "Accessibility Modeling"],
+    link:"https://medium.com/@andyaketch/left-behind-on-foot-mapping-healthcare-access-in-kenyas-forgotten-drylands-6115305d2d70" 
+  },
+  {
+    title: "Kiambu County Land Use & Environment Study",
+    description: "A remote sensing and machine learning study of environmental change in Kiambu County, Kenya. It combines RSEI (Remote Sensing Ecological Index) and LULC (Land Use/Land Cover) classification with SHAP analysis to interpret which factors are driving the changes detected in satellite imagery. The findings were written up as a Medium blog series, translating the technical analysis into a narrative on how the county's land and environment are shifting over time.",
+    image: "website_portfolio/Assets/testimonial2.jpg",
+    alt: "Kiambu County Land Use and Environment Study",
+    tags: ["Remote Sensing", "Machine Learning", "SHAP Interpretability", "RSEI & LULC"],
+    link: "https://medium.com/@andyaketch/fifteen-years-of-data-about-kiambus-ecological-health-9fd3fe32ccf1"
+    
+  },
+    {
+    title: "Kiambu County Land Use & Environment Study",
+    description: "A remote sensing and machine learning study of environmental change in Kiambu County, Kenya. It combines RSEI (Remote Sensing Ecological Index) and LULC (Land Use/Land Cover) classification with SHAP analysis to interpret which factors are driving the changes detected in satellite imagery. The findings were written up as a Medium blog series, translating the technical analysis into a narrative on how the county's land and environment are shifting over time.",
+    image: "website_portfolio/Assets/testimonial3.jpg",
+    alt: "Kiambu County Land Use and Environment Study",
+    tags: ["Remote Sensing", "Machine Learning", "SHAP Interpretability", "RSEI & LULC"],
+    link: "https://medium.com/@andyaketch/fifteen-years-of-data-about-kiambus-ecological-health-9fd3fe32ccf1"
+    
+  }
+];
+const projects = [
+  {
+    title: "Flagship Bot",
+    description: "A next-generation prototyping facility engineered for real-time edge computing, autonomous hardware stress testing, and human-robot collaborative learning environments.",
+    image:"website_portfolio/Assets/testimonial1.jpg",
+    alt: "ASAL Healthcare Accessibility Mapping",
+    tags: ["PostGIS", "Spatial SQL", "Accessibility Modeling"],
+    link:"https://medium.com/@andyaketch/left-behind-on-foot-mapping-healthcare-access-in-kenyas-forgotten-drylands-6115305d2d70" 
+  },
+  {
+    title: "State of the art laboratory",
+    description: "A next-generation prototyping facility engineered for real-time edge computing, autonomous hardware stress testing, and human-robot collaborative learning environments.",
+    image: "website_portfolio/Assets/robotics lab.jpg",
+    alt: "  Neural Robotics & Dynamics Lab",
+    tags: ["Pytorch", "Machine Learning", "Computer Vision" ],
+  } 
+  ]
+
+// build the project then insert them
+function renderProjects() {
+  const container = document.getElementById("projects-grid");
+
+  for (let i = 0; i < projects.length; i++) {
+    const project = projects[i];
+
+    // Build the little tag badges (e.g. "PostGIS", "Remote Sensing")
+    let tagsHtml = "";
+    for (let j = 0; j < project.tags.length; j++) {
+      tagsHtml += `<span class="project-tag">${project.tags[j]}</span>`;
+    }
+
+    // Create a new <article> element for this project
+    const article = document.createElement("article");
+    article.className = "project1"; // re-uses existing card styling from style.css doc
+
+    // Fill it in with the project's info
+    article.innerHTML = `
+      <div class="project1-image">
+        <img src="${project.image}" alt="${project.alt}">
+      </div>
+      <div class="project-content">
+        <div class="project-tags">${tagsHtml}</div>
+        <h3>${project.title}</h3>
+        <p>${project.description}</p>
+      </div>
+    `;
+
+    container.appendChild(article);
+  }
+}
+
+
+renderProjects();

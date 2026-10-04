@@ -1,49 +1,91 @@
-<!DOCTYPE html> <!-- Document type declaration -->
-<html lang="en"> <!-- Root element with language attribute -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive viewport settings -->
+<!doctype html>
+<!-- Document type declaration -->
+<html lang="en">
+  <!-- Root element with language attribute -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Responsive viewport settings -->
     <title>AA Website</title>
-    <link rel="stylesheet" href="style1.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="script.js" />
+  </head>
+  <body>
     <header id="navbar">
-        <div class="logo">AA</div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#navbar">Home</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>  
-        </nav>
+      <div class="logo">AA</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#navbar">Home</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section id="testimonials">
-        <div class="testimonials-card">
-            <p>What our clients say.</p>
+      <div class="testimonials-card">
+        <p>What our clients say.</p>
+      </div>
+      <section id="project">
+       <div class="card-item">
+          <div class="image-wrapper">
+            <img
+              class="testimonial-image"
+              src="website_portfolio/Assets/testimonial1.jpg"
+              alt="First Testimonial"
+            />
+          </div>
+          <p>AA Labs help[ed me find quick and automated solutions!</p>
         </div>
+        <div class="card-item">
+          <div class="image-wrapper">
+            <img
+              class="testimonial-image"
+              src="website_portfolio/Assets/testimonial2.jpg"
+              alt="Second Testimonial"
+            />
+          </div>
+          <p>Take a deep dive into our robotics projects!</p>
+        </div>
+               <div class="card-item">
+          <div class="image-wrapper">
+            <img
+              class="testimonial-image"
+              src="website_portfolio/Assets/testimonial3.jpg"
+              alt="Third Testimonial"
+            />
+          </div>
+          <p>Take a deep dive into our robotics projects!</p>
+        </div>
+      </section>
     </section>
 
-<section id="project">
-  <div class="card-item">
-    <div class="image-wrapper">
-      <img class="project-image" src="website_portfolio/Assets/robotics.jpg" alt="Flagship Bot">
-    </div>
-    <p>Build your own AI bot app today!</p>
-  </div>
-  <div class="card-item">
-    <div class="image-wrapper">
-      <img class="project-image" src="website_portfolio/Assets/robotics lab.jpg" alt="State of the art laboratory">
-    </div>
-    <p>Take a deep dive into our robotics projects!</p>
-  </div>
-</section>
+    <section id="project">
+      <div class="card-item">
+        <div class="image-wrapper">
+          <img
+            class="project-image"
+            src="website_portfolio/Assets/robotics.jpg"
+            alt="Flagship Bot"
+          />
+        </div>
+        <p>Build your own AI bot app today!</p>
+      </div>
+      <div class="card-item">
+        <div class="image-wrapper">
+          <img
+            class="project-image"
+            src="website_portfolio/Assets/robotics lab.jpg"
+            alt="State of the art laboratory"
+          />
+        </div>
+        <p>Take a deep dive into our robotics projects!</p>
+      </div>
+    </section>
 
-<footer id="contacts">
-  <!-- <p>Get in touch: <a href="mailto:aaaiforthefuture@robotics.com">aaaiforthefuture@robotics.com</a></p> -->
-  <p class="copyright">&copy; 2026 AA Robotics. All rights reserved.</p>
-</footer>
-
-</body>
+    <footer id="contacts">
+      <!-- <p>Get in touch: <a href="mailto:aaaiforthefuture@robotics.com">aaaiforthefuture@robotics.com</a></p> -->
+      <p class="copyright">&copy; 2026 AA Robotics. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
